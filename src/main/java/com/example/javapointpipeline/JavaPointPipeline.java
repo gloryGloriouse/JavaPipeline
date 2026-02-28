@@ -17,6 +17,8 @@ public class JavaPointPipeline {
         System.out.println("Distance = " + A.calculDistance(B));
 
         Point M = A.calculMilieu(B);
-        System.out.println("Milieu = (" + M.x + "," + M.y + ")");
+        System.out.println("Milieu2 = (" + M.x + "," + M.y + ")");
+        // Exemple : ajoute un print dans PointTest
+        System.out.println("Test de pipeline OK");
     }
 }
