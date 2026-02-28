@@ -10,20 +10,19 @@ package com.example.javapointpipeline;
  */
 public class Point {
     
-    double x, y;
+    public double x;
+    public double y;
 
-    public Point(double x, double y) {
+    public Point(double x, double y){
         this.x = x;
         this.y = y;
     }
 
-    public double calculDistance(Point p) {
-        return Math.sqrt(Math.pow(p.x - x, 2) + Math.pow(p.y - y, 2));
+    public double calculDistance(Point p){
+        return Math.sqrt(Math.pow(p.x - this.x, 2) + Math.pow(p.y - this.y, 2));
     }
 
-    public Point calculMilieu(Point p) {
-        return new Point((x + p.x)/2, (y + p.y)/2);
-    }
-
-    
+    public Point calculMilieu(Point p){
+        return new Point((this.x + p.x)/2, (this.y + p.y)/2);
+    }    
 }
